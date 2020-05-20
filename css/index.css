@@ -152,18 +152,27 @@ body {
 }
 .space {
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 .innerbg {
   background-color: #FFCB9A;
 }
+.h2 {
+  font-size: 1rem;
+  font-variant: small-caps;
+  display: inline-block;
+  text-indent: 4rem;
+  color: #116466;
+}
 .wrapper {
-  width: 80%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin: 0rem auto;
   padding: 1rem;
   border: 15px solid #2C3531;
+  border-top: 0;
+  border-bottom: 0;
   background-color: #f3f9f7;
 }
 .wrapper header {
@@ -179,7 +188,7 @@ body {
   flex-direction: row;
   margin: 0rem auto;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   justify-content: space-evenly;
 }
 .wrapper header nav a {
@@ -213,26 +222,27 @@ body {
   border-radius: 2rem 0 0 0;
 }
 .wrapper .topcon img {
-  width: 48%;
+  width: 33%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
 }
 .wrapper .topcon h1 {
-  font-size: 2.5rem;
-  margin: 0 auto;
-  padding: 3rem;
-  padding-bottom: 0;
-  display: inline-block;
-}
-.wrapper .topcon h2 {
-  font-size: 1.5rem;
-  font-variant: small-caps;
-  display: inline-block;
-}
-.wrapper .topcon p {
   font-size: 2rem;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.wrapper .topcon h2 {
+  font-size: 1rem;
+  font-variant: small-caps;
+  display: inline-block;
+  text-indent: 4rem;
+  color: #116466;
+}
+.wrapper .topcon p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 2rem;
   line-height: 2em;
 }
 .wrapper .topcon p em {
@@ -240,13 +250,57 @@ body {
   padding: 0.5rem;
 }
 .wrapper .topcon .button {
-  font-size: 2rem;
-  margin: 1.5rem;
-  padding: 1.5rem;
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
   background-color: #116466;
   color: #D9B08C;
-  border: 2px dashed #D1E8E2;
+  border: 0.2rem dashed #D1E8E2;
 }
-.midcon {
-  border: 20px solid #D1E8E2;
+.wrapper .midcon {
+  border: 0.1rem dashed #2C3531;
+  border-top: 2rem solid #2C3531;
+  display: flex;
+  flex-direction: row;
+  margin: 0rem auto;
+  padding: 1rem;
+  align-content: space-evenly;
+}
+.wrapper .midcon div {
+  width: 60%;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-indent: -2rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.wrapper .midcon div small {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+.wrapper .midcon .list {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  padding: 1rem;
+  align-items: center;
+  padding-right: 2rem;
+}
+.wrapper .midcon .list h3 {
+  font-size: 1.4rem;
+  font-style: bold;
+  font-variant: small-caps;
+  padding: 1rem;
+  border-bottom: 0.1rem dotted #2C3531;
+  width: 75%;
+}
+.wrapper .midcon .list .list-item {
+  width: 70%;
+  border-bottom: 0.1rem dotted #2C3531;
+  margin: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+.wrapper .history {
+  border: 1rem solid #2C3531;
 }
