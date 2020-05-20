@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -58,5 +58,148 @@ html, body {
 
 }
 
+// Variables
+	//colors
+		@color-grey: #2C3531;
+		@color-green: #116466;
+		@color-tan: #D9B08C;
+		@color-peach: #FFCB9A;
+		@color-mint: #D1E8E2;
+		
+	//font sizing
+		@lg: 2.5rem;
+		@md: @lg - .5;
+		@sm: @lg - 1;
+		
 
 
+
+
+//mixins
+	.flex-col{
+		display:flex;
+		flex-direction: column;
+		margin: 0rem auto;	
+		padding: 1rem;
+	}
+	
+	.flex-row{
+		display:flex;
+		flex-direction: row;
+		margin: 0rem auto;	
+		padding: 1rem;
+	}
+	
+	.nospace{
+		margin: 0;
+		padding: 0;
+	}
+	
+	.space{
+		margin: 0 auto;
+		padding: 3rem;
+	}
+
+
+	.innerbg{
+		background-color: @color-peach;
+	}
+
+
+//nested css
+	.wrapper{
+		width: 80%;
+		.flex-col();
+		border: 15px solid @color-grey;
+		background-color: lighten(@color-mint, 10%);
+		header{
+			.innerbg();
+			.nospace();
+			width: 50%;
+			align-self: flex-end;
+			border-radius: 2rem 2rem 0 0;
+			nav{
+				.flex-row();
+				font-size: @md;
+				justify-content: space-evenly;
+				
+				a{
+					text-decoration: none;
+					color: @color-green;
+
+					&:hover{
+						animation: nav-ani 2.8s both;
+					}
+						@keyframes nav-ani {
+							10%, 90% {
+								transform: translate3d(-0.1rem, 0, 0);
+							}
+							
+							20%, 80% {
+								transform: translate3d(0.2rem, 0, 0);
+							}
+							
+							30%, 50%, 70% {
+								transform: translate3d(-1rem, 0, 0);
+							}
+							
+							40%, 60% {
+								transform: translate3d(0.5rem, 0, 0);
+							}
+					}
+					
+				}
+			}
+		}
+	
+		.topcon{
+
+			.innerbg();
+			border-radius: 2rem 0 0 0;
+
+				img{
+					width: 33%+15px;
+					.space
+				}
+	
+				h1{
+					font-size: @lg;
+					.space();
+					padding-bottom: 0;
+					display: inline-block;
+				}
+
+				h2{
+					font-size: @sm;
+					font-variant: small-caps;
+					display: inline-block;
+				}
+
+				p{
+					font-size: @md;
+					.space();
+					line-height: 2em;
+
+					em{
+						color: @color-green;
+						padding: .5rem;
+					}
+				}
+	
+				.button{
+					font-size: @md;
+					margin: @sm;
+					padding: @sm;
+					background-color: @color-green;
+					color: @color-tan;
+					border: 2px dashed @color-mint;
+				}
+
+			}
+		}
+		
+		.midcon{
+			border: 20px solid @color-mint;
+		}
+	
+		

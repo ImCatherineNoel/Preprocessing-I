@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -133,4 +133,120 @@ table {
 html,
 body {
   height: 100%;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  padding: 1rem;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem auto;
+  padding: 1rem;
+}
+.nospace {
+  margin: 0;
+  padding: 0;
+}
+.space {
+  margin: 0 auto;
+  padding: 3rem;
+}
+.innerbg {
+  background-color: #FFCB9A;
+}
+.wrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0rem auto;
+  padding: 1rem;
+  border: 15px solid #2C3531;
+  background-color: #f3f9f7;
+}
+.wrapper header {
+  background-color: #FFCB9A;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  align-self: flex-end;
+  border-radius: 2rem 2rem 0 0;
+}
+.wrapper header nav {
+  display: flex;
+  flex-direction: row;
+  margin: 0rem auto;
+  padding: 1rem;
+  font-size: 2rem;
+  justify-content: space-evenly;
+}
+.wrapper header nav a {
+  text-decoration: none;
+  color: #116466;
+}
+.wrapper header nav a:hover {
+  animation: nav-ani 2.8s both;
+}
+@keyframes nav-ani {
+  10%,
+  90% {
+    transform: translate3d(-0.1rem, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(0.2rem, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1rem, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0.5rem, 0, 0);
+  }
+}
+.wrapper .topcon {
+  background-color: #FFCB9A;
+  border-radius: 2rem 0 0 0;
+}
+.wrapper .topcon img {
+  width: 48%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+.wrapper .topcon h1 {
+  font-size: 2.5rem;
+  margin: 0 auto;
+  padding: 3rem;
+  padding-bottom: 0;
+  display: inline-block;
+}
+.wrapper .topcon h2 {
+  font-size: 1.5rem;
+  font-variant: small-caps;
+  display: inline-block;
+}
+.wrapper .topcon p {
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 3rem;
+  line-height: 2em;
+}
+.wrapper .topcon p em {
+  color: #116466;
+  padding: 0.5rem;
+}
+.wrapper .topcon .button {
+  font-size: 2rem;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  background-color: #116466;
+  color: #D9B08C;
+  border: 2px dashed #D1E8E2;
+}
+.midcon {
+  border: 20px solid #D1E8E2;
 }
