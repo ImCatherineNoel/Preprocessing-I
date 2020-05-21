@@ -170,6 +170,14 @@ body {
   font-variant: small-caps;
   padding: 1rem;
 }
+.button {
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #116466;
+  color: #D9B08C;
+  border: 0.2rem dashed #D1E8E2;
+}
 .wrapper {
   width: 60%;
   display: flex;
@@ -377,4 +385,15 @@ body {
 .wrapper footer p a {
   text-decoration: none;
   color: #116466;
+}
+.hire {
+  font-size: 1.5rem;
+}
+.hire .button {
+  font-size: 1.5rem;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #116466;
+  color: #D9B08C;
+  border: 0.2rem dashed #D1E8E2;
 }

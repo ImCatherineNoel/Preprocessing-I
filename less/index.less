@@ -121,6 +121,15 @@ html, body {
 		padding: @sm;
 	}
 
+	.button{
+		font-size: @md;
+		margin: @lg;
+		padding: @sm;
+		background-color: @color-green;
+		color: @color-tan;
+		border: .2rem dashed @color-mint;
+	}
+
 //nested css
 	.wrapper{
 		width: 60%;
@@ -203,12 +212,7 @@ html, body {
 				}
 	
 				.button{
-					font-size: @md;
-					margin: @lg;
-					padding: @sm;
-					background-color: @color-green;
-					color: @color-tan;
-					border: .2rem dashed @color-mint;
+					.button();
 					}
 			}
 	
@@ -323,10 +327,14 @@ html, body {
 					text-decoration: none;
 					color: @color-green
 				}
-			}
-			
+			}	}
 		}
-	}
+		.hire{
+			font-size: @md;
+			.button{
+				.button();
+			}
+		}
 	
 	
 	
