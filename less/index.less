@@ -127,7 +127,6 @@ html, body {
 		.flex-col();
 		border: 15px solid @color-grey;
 		border-top: 0;
-		border-bottom: 0;
 		background-color: lighten(@color-mint, 10%);
 		padding-bottom: 0;
 		header{
@@ -316,7 +315,16 @@ html, body {
 			margin: 0 auto;
 			padding: 0%;
 			width: 100%;
-			background-color: @color-grey;
+			p{
+				color: @color-green;
+				text-align: center;
+				.space();
+				a{
+					text-decoration: none;
+					color: @color-green
+				}
+			}
+			
 		}
 	}
 	

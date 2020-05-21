@@ -178,7 +178,6 @@ body {
   padding: 1rem;
   border: 15px solid #2C3531;
   border-top: 0;
-  border-bottom: 0;
   background-color: #f3f9f7;
   padding-bottom: 0;
 }
@@ -368,5 +367,14 @@ body {
   margin: 0 auto;
   padding: 0%;
   width: 100%;
-  background-color: #2C3531;
+}
+.wrapper footer p {
+  color: #116466;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.wrapper footer p a {
+  text-decoration: none;
+  color: #116466;
 }
