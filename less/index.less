@@ -113,6 +113,13 @@ html, body {
 		text-indent: @lg * 2;
 		color: @color-green;
 	}
+	
+	.h3{
+		font-size: @lg * .7;
+		font-style: bold;
+		font-variant: small-caps;
+		padding: @sm;
+	}
 
 //nested css
 	.wrapper{
@@ -122,6 +129,7 @@ html, body {
 		border-top: 0;
 		border-bottom: 0;
 		background-color: lighten(@color-mint, 10%);
+		padding-bottom: 0;
 		header{
 			.innerbg();
 			.nospace();
@@ -207,7 +215,6 @@ html, body {
 	
 		
 		.midcon{
-			border: .1rem dashed @color-grey;
 			border-top: 2rem solid @color-grey;
 			.flex-row();
 				align-content: space-evenly;
@@ -230,10 +237,7 @@ html, body {
 					align-items: center;
 					padding-right: @lg;
 						h3{
-							font-size: @lg * .7;
-							font-style: bold;
-							font-variant: small-caps;
-							padding: @sm;
+							.h3();
 							border-bottom: .1rem dotted @color-grey;
 							width: 75%;
 							
@@ -249,14 +253,72 @@ html, body {
 
 		}
 	
-				.history{
-					border: 1rem solid @color-grey;
-					.flex-row{
-						h3{
-
-						}
-				}	
+		.history{
+				h3{
+					.h3();
 				}
+				.histbox{
+					.flex-row;
+					width: 100%;
+					justify-content: space-evenly;
+					.list-item{
+						font-size: @md;;
+					}		
+				}
+				.row{
+					.flex-row();
+					width: 100%;
+					.wh-box {
+						clear: both;
+						margin: 0px auto;
+						width: 28%;
+						background: #fff;
+						border-radius: 10px;
+					  	box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+					  	position: relative; 
+						z-index: 90;
+						
+						.year {
+							background: @color-tan;
+							height: 3rem;
+							width: 50%;
+							position: relative;
+							left:-30px;
+							top: -20px;
+							float: left;
+							box-shadow: 0px 0px 4px @color-grey;
+							z-index: 100; 
+								h3{
+									.h3();
+								}
+						}
+						.info {
+							padding: 2rem;
+							p{
+								padding: 2rem;
+
+
+
+								}
+							}
+							
+						
+						
+					
+					}
+					
+				
+
+				}	
+			}
+
+		footer{
+			margin: 0 auto;
+			padding: 0%;
+			width: 100%;
+			background-color: @color-grey;
+		}
+	}
 	
 	
 	
@@ -268,8 +330,5 @@ html, body {
 	
 	
 	
-	
-	
-	}	
-			
-			
+		
+// 	border: 1rem solid blue;
